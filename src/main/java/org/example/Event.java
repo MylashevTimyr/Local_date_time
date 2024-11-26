@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class Event {
     @JsonFormat(shape = JsonFormat.Shape.STRING,
-            pattern = "yyyy:MM:dd HH:mm:ss.SSS")
+            pattern = "yyyy:MM:dd HH:mm:ss.SSS",
+               locale = "ru")
     private LocalDateTime eventDate;
 }
